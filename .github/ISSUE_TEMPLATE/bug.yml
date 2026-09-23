@@ -1,0 +1,49 @@
+name: Помилка
+description: Щось зламалось або працює не так, як очікувалось
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Перед створенням issue швидко пошукайте, чи така вже є.
+        Питання безпеки — у [SECURITY.md](https://github.com/RiasJ1Dar/.github/blob/main/.github/SECURITY.md), не сюди.
+  - type: textarea
+    id: what
+    attributes:
+      label: Що сталось
+      description: Коротко, що очікували і що отримали.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Як відтворити
+      description: Кроки один за одним.
+      placeholder: |
+        1. …
+        2. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версія / коміт / реліз
+      placeholder: наприклад v1.2 або abc1234
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Середовище
+      description: ОС, архітектура, важливе оточення.
+      placeholder: Windows 11 x64 / …
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи / скрін
+      render: shell
+    validations:
+      required: false

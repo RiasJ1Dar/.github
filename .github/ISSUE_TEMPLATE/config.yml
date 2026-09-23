@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Угода контриб'ютора (CLA)
+    url: https://github.com/RiasJ1Dar/.github/blob/main/CLA.md
+    about: Перед великим внеском прочитайте CLA.
+  - name: Підтримати автора (Monobank)
+    url: https://send.monobank.ua/jar/4XsDm8vmF2
+    about: Донат на розвиток відкритих проєктів.

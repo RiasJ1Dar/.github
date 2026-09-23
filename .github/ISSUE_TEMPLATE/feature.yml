@@ -1,0 +1,31 @@
+name: Ідея / покращення
+description: Пропозиція нової можливості або зміни поведінки
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Великі зміни краще спочатку обговорити тут, перш ніж писати код.
+        Внески приймаються з [CLA](https://github.com/RiasJ1Dar/.github/blob/main/CLA.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Яку задачу це вирішує
+      description: Не «хочу кнопку», а яка біль / сценарій.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Пропозиція
+      description: Як бачите рішення. Альтернативи — теж ок.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Додатково
+      description: Обмеження, сумісність, посилання.
+    validations:
+      required: false
